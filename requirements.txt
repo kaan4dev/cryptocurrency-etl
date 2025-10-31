@@ -1,0 +1,16 @@
+requests
+pandas 
+pyarrow
+python-dotenv
+fastparquet
+pytest==8.3.2
+pytest-mock==3.14.0
+pyspark==3.5.1
+azure-storage-file-datalake
+logging
+azure-identity
+duckdb
+google-cloud-bigquery
+jupyter
+matplotlib
+seaborn
