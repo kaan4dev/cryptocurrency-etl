@@ -1,0 +1,3 @@
+(venv) kaancakir@Kaans-MacBook-Air cryptocurrency-etl % python src/model.py
+2025-11-03 10:18:33,181 [INFO] Loaded processed dataset: (5000, 21)
+2025-11-03 10:18:33,199 [INFO] Saved modeled dataset -> data/modeled/fact_market_summary.parquet
