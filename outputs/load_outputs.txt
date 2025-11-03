@@ -392,3 +392,411 @@ Response headers:
     'Content-Length': '0'
 2025-11-03 10:43:57,855 [INFO] Uploaded fact_market_summary.parquet -> modeled
 2025-11-03 10:43:57,857 [INFO] All layers uploaded successfully to Azure Data Lake.
+
+
+
+
+
+
+** new output **
+(venv) kaancakir@Kaans-MacBook-Air cryptocurrency-etl % python src/load.py
+2025-11-04 00:00:24,465 [INFO] Starting Azure upload process...
+2025-11-04 00:00:24,483 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/raw/crypto_listings_20251031_131753.json?resource=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '1e18d35c-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:25,312 [INFO] Response status: 201
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:25 GMT'
+    'ETag': '"0x8DE1B1C02D51530"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '5efee6db-e01f-0040-4704-4df0e5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '1e18d35c-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:25 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:25,317 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/raw/crypto_listings_20251031_131753.json?action=REDACTED&position=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'Content-Length': '3273390'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/json'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '1e982648-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2025-11-04 00:00:28,148 [INFO] Response status: 202
+Response headers:
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '5efee6e8-e01f-0040-5404-4df0e5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '1e982648-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:27 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:28,151 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/raw/crypto_listings_20251031_131753.json?action=REDACTED&position=REDACTED&close=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'If-Match': '"0x8DE1B1C02D51530"'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '204883c0-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:28,306 [INFO] Response status: 200
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:28 GMT'
+    'ETag': '"0x8DE1B1C049512C5"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '5efee8b0-e01f-0040-3704-4df0e5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '204883c0-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:28 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:28,307 [INFO] Uploaded crypto_listings_20251031_131753.json -> raw
+2025-11-04 00:00:28,311 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/raw/crypto_listings_20251031_131753.csv?resource=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2060fd1a-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:28,519 [INFO] Response status: 201
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:28 GMT'
+    'ETag': '"0x8DE1B1C04ABB094"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '5efee8c9-e01f-0040-5004-4df0e5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '2060fd1a-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:28 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:28,522 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/raw/crypto_listings_20251031_131753.csv?action=REDACTED&position=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'Content-Length': '1237560'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/json'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '208121d0-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2025-11-04 00:00:29,126 [INFO] Response status: 202
+Response headers:
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '5efee8df-e01f-0040-6604-4df0e5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '208121d0-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:28 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:29,128 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/raw/crypto_listings_20251031_131753.csv?action=REDACTED&position=REDACTED&close=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'If-Match': '"0x8DE1B1C04ABB094"'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '20dda676-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:29,245 [INFO] Response status: 200
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'ETag': '"0x8DE1B1C052ABC05"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '5efee91b-e01f-0040-2204-4df0e5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '20dda676-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:29,246 [INFO] Uploaded crypto_listings_20251031_131753.csv -> raw
+2025-11-04 00:00:29,251 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/._SUCCESS.crc?resource=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '20f06220-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:29,723 [INFO] Response status: 201
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'ETag': '"0x8DE1B1C056B8FAC"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af3395-b01f-004d-3e04-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '20f06220-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:29,726 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/._SUCCESS.crc?action=REDACTED&position=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'Content-Length': '8'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/json'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2138e07c-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2025-11-04 00:00:29,793 [INFO] Response status: 202
+Response headers:
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af33a4-b01f-004d-4d04-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '2138e07c-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:29,794 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/._SUCCESS.crc?action=REDACTED&position=REDACTED&close=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'If-Match': '"0x8DE1B1C056B8FAC"'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '214352dc-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:29,905 [INFO] Response status: 200
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'ETag': '"0x8DE1B1C058F5F5D"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af33ac-b01f-004d-5504-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '214352dc-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:29,906 [INFO] Uploaded ._SUCCESS.crc -> processed
+2025-11-04 00:00:29,909 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/part-00000-174845ad-fb77-499b-8e69-70b413ade0cc-c000.snappy.parquet?resource=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2154c4e0-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:30,062 [INFO] Response status: 201
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:30 GMT'
+    'ETag': '"0x8DE1B1C059FD688"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af33c1-b01f-004d-6a04-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '2154c4e0-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:30,066 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/part-00000-174845ad-fb77-499b-8e69-70b413ade0cc-c000.snappy.parquet?action=REDACTED&position=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'Content-Length': '615628'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/json'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '216cc5cc-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2025-11-04 00:00:30,548 [INFO] Response status: 202
+Response headers:
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af33ca-b01f-004d-7304-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '216cc5cc-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:29 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:30,550 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/part-00000-174845ad-fb77-499b-8e69-70b413ade0cc-c000.snappy.parquet?action=REDACTED&position=REDACTED&close=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'If-Match': '"0x8DE1B1C059FD688"'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '21b693a0-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:30,661 [INFO] Response status: 200
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:30 GMT'
+    'ETag': '"0x8DE1B1C0603E925"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af33e3-b01f-004d-0c04-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '21b693a0-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:30 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:30,662 [INFO] Uploaded part-00000-174845ad-fb77-499b-8e69-70b413ade0cc-c000.snappy.parquet -> processed
+2025-11-04 00:00:30,664 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/.part-00000-174845ad-fb77-499b-8e69-70b413ade0cc-c000.snappy.parquet.crc?resource=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '21c8101c-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:30,799 [INFO] Response status: 201
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:30 GMT'
+    'ETag': '"0x8DE1B1C0614B5A0"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af33e9-b01f-004d-1204-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '21c8101c-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:30 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:30,802 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/.part-00000-174845ad-fb77-499b-8e69-70b413ade0cc-c000.snappy.parquet.crc?action=REDACTED&position=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'Content-Length': '4820'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/json'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '21dd02a6-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2025-11-04 00:00:30,961 [INFO] Response status: 202
+Response headers:
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af33f4-b01f-004d-1d04-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '21dd02a6-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:30 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:30,963 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/processed/processed_crypto_listings_20251031_131753.parquet/.part-00000-174845ad-fb77-499b-8e69-70b413ade0cc-c000.snappy.parquet.crc?action=REDACTED&position=REDACTED&close=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'If-Match': '"0x8DE1B1C0614B5A0"'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '21f5aea0-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:31,080 [INFO] Response status: 200
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:31 GMT'
+    'ETag': '"0x8DE1B1C064425C9"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '21af3403-b01f-004d-2c04-4d3831000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '21f5aea0-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:30 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:31,081 [INFO] Uploaded .part-00000-174845ad-fb77-499b-8e69-70b413ade0cc-c000.snappy.parquet.crc -> processed
+2025-11-04 00:00:31,082 [INFO] Uploaded _SUCCESS -> processed
+2025-11-04 00:00:31,088 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/modeled/fact_market_summary.parquet?resource=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2208b48c-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:31,538 [INFO] Response status: 201
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:31 GMT'
+    'ETag': '"0x8DE1B1C068DD36C"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '1e11c2a6-b01f-0010-7304-4d32b5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '2208b48c-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:31 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:31,541 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/modeled/fact_market_summary.parquet?action=REDACTED&position=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'Content-Length': '126098'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/json'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '224dcfc2-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2025-11-04 00:00:31,830 [INFO] Response status: 202
+Response headers:
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '1e11c2b4-b01f-0010-0104-4d32b5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '224dcfc2-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:31 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:31,833 [INFO] Request URL: 'https://cryptocurrencyetl.dfs.core.windows.net/data-container/modeled/fact_market_summary.parquet?action=REDACTED&position=REDACTED&close=REDACTED'
+Request method: 'PATCH'
+Request headers:
+    'If-Match': '"0x8DE1B1C068DD36C"'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.22.0 Python/3.13.7 (macOS-26.0.1-arm64-arm-64bit-Mach-O)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '227a4692-b8f8-11f0-a989-6ecea5121369'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-11-04 00:00:31,951 [INFO] Response status: 200
+Response headers:
+    'Last-Modified': 'Mon, 03 Nov 2025 21:00:31 GMT'
+    'ETag': '"0x8DE1B1C06C71439"'
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'x-ms-request-id': '1e11c2dc-b01f-0010-2904-4d32b5000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '227a4692-b8f8-11f0-a989-6ecea5121369'
+    'Date': 'Mon, 03 Nov 2025 21:00:31 GMT'
+    'Content-Length': '0'
+2025-11-04 00:00:31,952 [INFO] Uploaded fact_market_summary.parquet -> modeled
+Dataset 'crypto_dataset' already exists.
+Loaded 4535 rows from data/modeled/fact_market_summary.parquet
+Table 'fact_market_snapshot' already exists.
+/Users/kaancakir/data_projects_local/cryptocurrency-etl/venv/lib/python3.13/site-packages/google/cloud/bigquery/_pandas_helpers.py:484: FutureWarning: Loading pandas DataFrame into BigQuery will require pandas-gbq package version 0.26.1 or greater in the future. Tried to import pandas-gbq and got: No module named 'pandas_gbq'
+  warnings.warn(
+4535 rows successfully loaded into crypto-etl-477118.crypto_dataset.fact_market_snapshot
+2025-11-04 00:00:38,239 [INFO] All layers uploaded successfully to Azure Data Lake and BigQuery.
+(venv) kaancakir@Kaans-MacBook-Air cryptocurrency-etl % 

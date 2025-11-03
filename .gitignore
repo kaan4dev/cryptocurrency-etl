@@ -1,3 +1,5 @@
 venv
 data/
 .env
+crypto-etl-*.json
+dags/__pycache__/
